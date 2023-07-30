@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Studio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,6 +18,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/media.css" />
   </head>
   <body>
     <header class="header">
@@ -61,6 +62,105 @@
             </li>
           </ul>
         </address>
+        <button type="button" class="header-mobile-open-btn" data-menu-open>
+          <svg class="header-hamburger-icon" width="32" height="32">
+            <use href="./images/icons.svg#icon-menu-hamburger"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mob-menu is-hidden" data-menu>
+        <div class="mob-menu-div">
+        <button type="button" class="header-mobile-close-btn" data-menu-close>
+          <svg class="header-mobile-close-svg" width="8" height="8">
+            <use href="./images/icons.svg#icon-cross"></use>
+          </svg>
+        </button>
+        <ul class="mob-menu-list list">
+          <li class="mob-menu-item">
+            <a
+              href="./index.html"
+              class="mob-menu-link link current-page"
+              >Studio</a
+            >
+          </li>
+          <li class="mob-menu-item">
+            <a href="./portfolio.html" class="mob-menu-link link"
+              >Portfolio</a
+            >
+          </li>
+          <li class="mob-menu-item">
+            <a href="" class="mob-menu-link link">Contacts</a>
+          </li>
+        </ul>
+    </div>
+        <div class="mob-address-div">
+          <ul class="mob-address-list list">
+            <li class="mob-address-item">
+              <a href="tel:+110001111111" class="mob-address-phone-link link"
+                >+11 (000) 111-11-11 </a>
+            </li>
+            <li class="mob-address-item">
+              <a
+                href="mailto:info@devstudio.com"
+                class="mob-address-link link"
+                >info@devstudio.com </a>
+            </li>
+          </ul>
+        <ul class="mob-socials-list list">
+          <li class="mob-socials-list-item">
+            <a
+              href=""
+              class="mob-link-socials"
+              aria-label="instagram"
+              rel="no-referrer noopener"
+              target="_blank"
+            >
+              <svg class="mob-socials-item" width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mob-socials-list-item">
+            <a
+              href=""
+              class="mob-link-socials"
+              aria-label="instagram"
+              rel="no-referrer noopener"
+              target="_blank"
+            >
+              <svg class="mob-socials-item" width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mob-socials-list-item">
+            <a
+              href=""
+              class="mob-link-socials"
+              aria-label="instagram"
+              rel="no-referrer noopener"
+              target="_blank"
+            >
+              <svg class="mob-socials-item" width="24" height="24">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mob-socials-list-item">
+            <a
+              href=""
+              class="mob-link-socials"
+              aria-label="instagram"
+              rel="no-referrer noopener"
+              target="_blank"
+            >
+              <svg class="mob-socials-item" width="24" height="24">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
       </div>
     </header>
 
@@ -137,10 +237,16 @@
           <h2 class="doing-section-title">What are we doing</h2>
           <ul class="doing-list list">
             <li class="doing-list-item">
-              <img src="./images/monitor.jpg" alt="Monitor" width="360" />
+              <img
+                srcset="./images/monitor.jpg 1x, ./images/monitor-2x.jpg 2x"
+                src="./images/monitor.jpg"
+                alt="Monitor"
+                width="360"
+              />
             </li>
             <li class="doing-list-item">
               <img
+                srcset="./images/phoneapps.jpg 1x, ./images/phoneapps-2x.jpg 2x"
                 src="./images/phoneapps.jpg"
                 alt="phone-applications"
                 width="360"
@@ -148,6 +254,10 @@
             </li>
             <li class="doing-list-item">
               <img
+                srcset="
+                  ./images/phonescreen.jpg    1x,
+                  ./images/phonescreen-2x.jpg 2x
+                "
                 src="./images/phonescreen.jpg"
                 alt="screen-of-the-phone"
                 width="360"
@@ -163,6 +273,10 @@
           <ul class="team-list list">
             <li class="team-section-item">
               <img
+                srcset="
+                  ./images/mark-guerrero.jpg    1x,
+                  ./images/mark-guerrero-2x.jpg 2x
+                "
                 src="./images/mark-guerrero.jpg"
                 alt="mark-product-design"
                 width="264"
@@ -228,6 +342,7 @@
             </li>
             <li class="team-section-item">
               <img
+                srcset="./images/tom-ford.jpg 1x, ./images/tom-ford-2x.jpg 2x"
                 src="./images/tom-ford.jpg"
                 alt="tom-frontend-dev"
                 width="264"
@@ -293,6 +408,10 @@
             </li>
             <li class="team-section-item">
               <img
+                srcset="
+                  ./images/camila-garcia.jpg    1x,
+                  ./images/camila-garcia-2x.jpg 2x
+                "
                 src="./images/camila-garcia.jpg"
                 alt="camila-marketing"
                 width="264"
@@ -358,6 +477,10 @@
             </li>
             <li class="team-section-item">
               <img
+                srcset="
+                  ./images/daniel-wilson.jpg    1x,
+                  ./images/daniel-wilson-2x.jpg 2x
+                "
                 src="./images/daniel-wilson.jpg"
                 alt="daneil-ui-design"
                 width="264"
@@ -583,14 +706,16 @@
         <div class="subscribe-container">
           <p class="subscribe-p">Subscribe</p>
           <form class="footer-subscribe-form">
-            <label class="footer-label-email">
-              <input
-                type="email"
-                name="user-footer-email"
-                class="footer-email-input"
-                placeholder="E-mail"
-              />
-            </label>
+            <div class="footer-form-div">
+              <label class="footer-label-email">
+                <input
+                  type="email"
+                  name="user-footer-email"
+                  class="footer-email-input"
+                  placeholder="E-mail"
+                />
+              </label>
+            </div>
             <button type="submit" class="footer-subscribe-button">
               Subscribe
               <svg class="footer-subscribe-icon" width="24" height="24">
@@ -684,5 +809,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
