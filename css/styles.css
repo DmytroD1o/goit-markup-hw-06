@@ -170,6 +170,12 @@ ol {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  transform: translate(100%);
+  transition: transform 250ms ease-in-out;
+}
+
+.mob-menu.is-open {
+  transform: translate(0);
 }
 
 .mob-menu-list {
