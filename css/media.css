@@ -156,7 +156,7 @@
     color: var(--secondary-color);
     font-style: normal;
     font-family: Roboto;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 1.16; /* 116.667% */
     letter-spacing: 0.04em;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -343,6 +343,16 @@
     padding: 12px 24px;
   }
 
+  .developments-list {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 72px;
+    column-gap: 24px;
+  }
+  
+  .develops-list-item {
+    width: calc((100% - 24px) / 2);
+  }
 
 }
 
@@ -599,7 +609,16 @@
     margin-bottom: 72px;
   }
 
-
+  .developments-list {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 48px;
+    column-gap: 24px;
+  }
+  
+  .develops-list-item {
+    width: calc((100% - 48px) / 3);
+  }
 
   .modal {
     top: 50%;
